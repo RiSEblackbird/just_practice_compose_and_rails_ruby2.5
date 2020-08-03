@@ -4,6 +4,7 @@ RUN mkdir /myapp
 WORKDIR /myapp
 COPY Gemfile /myapp/Gemfile
 COPY Gemfile.lock /myapp/Gemfile.lock
+RUN gem install bundler -v 2.0.1
 RUN bundle install
 COPY . /myapp
 
