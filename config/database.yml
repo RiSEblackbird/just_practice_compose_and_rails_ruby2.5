@@ -1,7 +1,12 @@
+### Composeのデータベース設定から 
+### https://matsuand.github.io/docs.docker.jp.onthefly/compose/rails/#connect-the-database
 default: &default
   adapter: postgresql
   encoding: unicode
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  host: db
+  username: postgres
+  password: password
+  pool: 5
 
 development:
   <<: *default

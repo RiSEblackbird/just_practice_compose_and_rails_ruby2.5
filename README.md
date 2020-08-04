@@ -15,3 +15,4 @@ Railsのgitignore
 * ``$ docker-compose run web rails new . --force --no-deps --database=postgresql``
 * ``$ docker-compose run web bundle update``
 * ``$ docker-compose build``
+* ``config/database.yml``の記述を[クイックスタートのDB設定の記述](https://matsuand.github.io/docs.docker.jp.onthefly/compose/rails/#connect-the-database)に変更
