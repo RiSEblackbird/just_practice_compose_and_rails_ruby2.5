@@ -4,7 +4,7 @@ RUN mkdir /myapp
 WORKDIR /myapp
 COPY Gemfile /myapp/Gemfile
 COPY Gemfile.lock /myapp/Gemfile.lock
-# bundlerのエラーへの対処するためにバージョンを指定
+# bundlerのエラーへの対処するためにBundler 2系をインストール
 RUN gem install bundler
 RUN bundle install
 COPY . /myapp
