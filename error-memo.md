@@ -34,8 +34,8 @@ ERROR: Service 'web' failed to build: The command '/bin/sh -c bundle install' re
 
 Bundler 2系を使用するようにとの指示。  
 ``RUN bundle install``  
-の前行に当該Gemをインストールを実行する命令を追加する。  
-``RUN gem install bundler -v 2.0.1``
+の前行にbundlerをインストールする命令を追加する。  
+``RUN gem install bundler``
 
 ~~~dockerfile:変更後
 FROM ruby:2.5
@@ -44,7 +44,7 @@ RUN mkdir /myapp
 WORKDIR /myapp
 COPY Gemfile /myapp/Gemfile
 COPY Gemfile.lock /myapp/Gemfile.lock
-RUN gem install bundler -v 2.1.4
+RUN gem install bundler
 RUN bundle install
 COPY . /myapp
 
