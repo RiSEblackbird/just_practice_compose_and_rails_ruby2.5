@@ -2,7 +2,6 @@
 
 Railsのgitignore
 　[gitignore/Rails.gitignore](https://github.com/github/gitignore/blob/master/Rails.gitignore)
-　[gitignore/Rails.gitignore](https://github.com/github/gitignore/blob/master/Rails.gitignore)
 
 ## 工程(仮)
 * 作成：``.gitignore``
@@ -15,3 +14,4 @@ Railsのgitignore
 * 作成：``docker-compose.yml``
 * ``$ docker-compose run web rails new . --force --no-deps --database=postgresql``
 * ``$ docker-compose run web bundle update``
+* ``$ docker-compose build``
