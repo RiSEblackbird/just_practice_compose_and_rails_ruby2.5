@@ -1,10 +1,14 @@
-[クィックスタート: Compose と Rails | Docker ドキュメント](https://matsuand.github.io/docs.docker.jp.onthefly/compose/rails/)
+## 主な参照先
 
-Railsのgitignore
-　[gitignore/Rails.gitignore](https://github.com/github/gitignore/blob/master/Rails.gitignore)
+1. [クィックスタート: Compose と Rails | Docker ドキュメント](https://matsuand.github.io/docs.docker.jp.onthefly/compose/rails/)
+2. [Language Guide: Ruby - CircleCI](https://circleci.com/docs/2.0/language-ruby/)
+3. [Configuring Deploys - CircleCI](https://circleci.com/docs/2.0/deployment-integrations/)
+    * 日本語(※翻訳中)：[デプロイの構成 - CircleCI](https://circleci.com/docs/ja/2.0/deployment-integrations/)
 
 ## 工程(仮)
-* 作成：``.gitignore``
+
+### 基準：[クィックスタート: Compose と Rails | Docker ドキュメント](https://matsuand.github.io/docs.docker.jp.onthefly/compose/rails/)
+* 作成：``.gitignore`` ([gitignore/Rails.gitignore](https://github.com/github/gitignore/blob/master/Rails.gitignore))
 * 作成：``Dockerfile``
   * (bundlerのエラーへの対処するためにBundler 2系をインストール命令を追記する
 ``RUN gem install bundler``)
@@ -17,6 +21,11 @@ Railsのgitignore
 * ``$ docker-compose build``
 * ``config/database.yml``の記述を[クイックスタートのDB設定の記述](https://matsuand.github.io/docs.docker.jp.onthefly/compose/rails/#connect-the-database)に変更
 * ``$ docker-compose up``
+  * 起動中、別窓にて下記を実行。
+  * ``$ docker-compose run web rake db:create``
+  * ``http://localhost:3000``へアクセスしてRailsのデフォルトページの表示を確認。次へ。
+
+### 基準:[Language Guide: Ruby - CircleCI](https://circleci.com/docs/2.0/language-ruby/)
 
 ## 確認用コマンド
 
