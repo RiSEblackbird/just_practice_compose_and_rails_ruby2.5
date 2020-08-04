@@ -1,16 +1,24 @@
-#
+# README
 
-## Docker, Compose
-[クィックスタート: Compose と Rails | Docker ドキュメント](https://matsuand.github.io/docs.docker.jp.onthefly/compose/rails/)
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-Railsのgitignore
-　[gitignore/Rails.gitignore](https://github.com/github/gitignore/blob/master/Rails.gitignore)
+Things you may want to cover:
 
-## 工程(仮)
-1. 作成：``.gitignore``
-2. 作成：``Dockerfile``
-3. 作成：``Gemfile``
-4. 作成：``Gemfile.lock``
-5. 作成：``entrypoint.sh``
-6. 作成：``docker-compose.yml``
-7. ``$ docker-compose run web rails new . --force --no-deps --database=postgresql``
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
