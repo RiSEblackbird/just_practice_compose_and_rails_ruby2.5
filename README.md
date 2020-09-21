@@ -1,3 +1,13 @@
+# _Compose_and_rails_ruby2.5
+
+(This repository is my own self-study document
+)
+
+## リポジトリの目的
+
+- ``Ruby``及び``Rails``の開発環境を``Docker Compose``で構築する基礎学習
+- 学習記録/自分用資料まとめ
+
 ## 主な参照先
 
 1. [クィックスタート: Compose と Rails | Docker ドキュメント](https://matsuand.github.io/docs.docker.jp.onthefly/compose/rails/)
