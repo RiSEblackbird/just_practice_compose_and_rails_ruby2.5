@@ -15,7 +15,7 @@
 3. [Configuring Deploys - CircleCI](https://circleci.com/docs/2.0/deployment-integrations/)
     * 日本語(※翻訳中)：[デプロイの構成 - CircleCI](https://circleci.com/docs/ja/2.0/deployment-integrations/)
 
-## 工程(仮)
+## 工程
 参照先のドキュメントの工程を基準にしつつ、手元環境に合わせて内容を必要最小限に調整しながら進める。
 ### 基準：[クィックスタート: Compose と Rails | Docker ドキュメント](https://matsuand.github.io/docs.docker.jp.onthefly/compose/rails/)
 * 作成：``.gitignore`` ([gitignore/Rails.gitignore](https://github.com/github/gitignore/blob/master/Rails.gitignore))
